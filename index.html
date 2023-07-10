@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ff160e181b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<div id="header">
+    <div class="container"></div>
+    <nav>
+       <a href ="index.html"> <img src="images/logo.jpg" class="logo" alt = "Logo"> </a>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#knowledge">Knowledge</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li> 
+            <i class="fa-solid fa-x" onclick="closemenu()"></i>
+        </ul> 
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Eric Holzaepfel</span><br>Lorem ipsum dolor sit amet.</h1>
+        </div>
+</div>
+<!-- About Section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/casual.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas tenetur odio error ut iusto placeat accusantium expedita, explicabo totam sapiente fuga a nam, animi delectus possimus saepe repudiandae labore, veritatis voluptatem consequuntur laborum? Cumque numquam porro quidem autem consequuntur esse veniam repellat nihil atque animi voluptatibus minima, facilis nesciunt quos.</p>
+                <div class="tab-titles">
+                    <p class ="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class ="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class ="tab-links" onclick="opentab('education')">Education</p>
+                    <!-- <p class="tab-links" onclick="opentab('stack')">Stack</p> -->
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>May 2023- June 2023</span><br>Web Application Development Training/Internship at IRely</li>
+                        <li><span>2017-2022</span><br>Studied Bachelor of Science in Information Technology at De La Salle University - Dasmariñas</li>
+                        <li><span>May 2022- August 2022</span><br>Internship at Truely</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017-2022</span><br>Bachelor of Science in Information Technology at De La Salle University-Dasmariñas</li>
+                        <li><span>2012-2015</span><br>Associate Degree in Cisco Networking at De La Salle University-Dasmariñas</li>
+                        <li><span>2008-2012</span><br>St. Mary's Academy</li>
+                    </ul>
+                </div>
+                <!-- <div class="tab-contents" id="stack">
+                    <ul>
+                        <li><span>C#</span><br>555</li>
+                        <li><span>Java</span><br>555</li>
+                        <li><span>CSS</span><br>555</li>
+                        <li><span>HTML</span><br>555</li>
+                        <li><span>Javascript</span><br>555</li>
+                        <li><span>Python</span><br>555</li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- knowledge Section -->
+<div id="knowledge">
+    <div class="container">
+        <h1 class="sub-title">My Knowledge</h1>
+         <div class="knowledge-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>C#</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium nulla enim sit adipisci a? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero tenetur iure, doloremque inventore commodi dolore.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-square-js"></i>
+                <h2>Javascript</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium nulla enim sit adipisci a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eaque esse autem! Debitis, eaque unde.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h2>HTML/CSS</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium nulla enim sit adipisci a? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quaerat minima quo quibusdam, impedit in!</p>
+                <a href="#">Learn more</a>
+            </div>
+         </div>
+    </div>
+</div>
+
+<!-- Portfolio Section -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/fizzbuzz.PNG" alt="FizzBuzz">
+                <div class="layer">
+                    <h3>Fizz Buzz</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dignissimos praesentium ratione, necessitatibus et ea.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/fizzbuzz.PNG" alt="FizzBuzz">
+                <div class="layer">
+                    <h3>Fizz Buzz</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dignissimos praesentium ratione, necessitatibus et
+                        ea.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/fizzbuzz.PNG" alt="FizzBuzz">
+                <div class="layer">
+                    <h3>Fizz Buzz</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dignissimos praesentium ratione, necessitatibus et
+                        ea.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> holzaepfeleric@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +639293315509</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/rchlzpfl/" target="_blank" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/rchlzpfl/" target="_blank" title="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/eric-holzaepfel-6728721a7/" target="_blank" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/rchlzpfl?tab=repositories" target="_blank" title="Github" ><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="images/EricHolzaepfelCV.pdf" download target="_blank" title="Eric's CV" class="btn btn2">Download my CV</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" cols="30" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Eric Holzaepfel 2023.  </p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbxEHs72zodK4urUJbvikP-hveHcinqhZymC4LsTWTtHFAuy4N7YVVxhfKn_at9dAfsw/exec"
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully!"
+                setTimeout(function () {
+                    msg.innerHTML = ""
+                  }, 5000)
+                  form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
